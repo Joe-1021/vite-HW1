@@ -53,7 +53,7 @@ function App() {
         <tbody> {product.map((i)=>{
           return(
             <tr key={i.id}>
-              <td>{i.i}</td>
+              <td>{i.product}</td>
               <td><small>{i.desc}</small></td>
               <td>{i.price}</td>
               <td><button onClick={()=>{ minus(i)}}>-</button>{i.stock}<button onClick={()=>{add(i)}}>+</button></td>
